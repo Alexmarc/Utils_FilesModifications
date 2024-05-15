@@ -22,11 +22,11 @@ def compare_folders(folder1, folder2):
     same_files = []
     diff_files = []
     for file in common_files:
-        # On compare les fichiers qui ont le même nom
-        if filecmp.cmp(folder1 / file, folder2 / file, shallow=False):
-            same_files.append(file)
+        # On compare les fichiers qui ont le même chemin
+        if filecmp.cmp(file, Path(folder2) / file.name, shallow=False):
+            same_files.append(file.name)
         else:
-            diff_files.append(file)
+            diff_files.append(file.name)
 
     return only_in_folder1, only_in_folder2, same_files, diff_files
 
@@ -37,7 +37,7 @@ folder_path2  = 'D:/AlexandreMarchettiDossierPersonnel/__GITHUB_PROJECT__/Utils_
 
 # Appel de la fonction de comparaison
 results = compare_folders(folder_path1, folder_path2)
-print("Fichiers uniquement dans le premier dossier:", results[0])
-print("Fichiers uniquement dans le deuxième dossier:", results[1])
+print("Fichiers uniquement dans ", {folder_path1}, ":", {f.name for f in results[0]})
+print("Fichiers uniquement dans ", {folder_path2}, ":", {f.name for f in results[1]})
 print("Fichiers identiques dans les deux dossiers:", results[2])
 print("Fichiers avec des différences:", results[3])
