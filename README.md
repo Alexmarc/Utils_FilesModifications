@@ -2,9 +2,13 @@
 
 ### Description:
 ```
-Utils to work on files :
-- .xyz
-- .txt
+Utils to work on files and folders :
+- Compare folders
+- Dividing cloud point datas
+- Changing files names inside a folder
+- Listing files inside folders
+- Removing characters inside a file
+
 
 ```
 

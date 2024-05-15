@@ -14,5 +14,5 @@ def rename_files(directory):
             print(f"Renamed '{filename}' to '{new_name}'")
 
 # Spécifiez le chemin du répertoire contenant les fichiers à renommer
-directory_path = 'D:/FreeDome-Data/modules/modulesIcons/phet'
+directory_path = 'Your/Path/ToFolder'
 rename_files(directory_path)

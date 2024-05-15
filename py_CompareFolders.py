@@ -36,8 +36,8 @@ def compare_folders(folder1, folder2):
     return only_in_folder1, only_in_folder2, same_files, diff_files
 
 # Chemins des deux dossiers à comparer
-folder_path1 = 'D:/AlexandreMarchettiDossierPersonnel/__GITHUB_PROJECT__/Utils_FilesModifications/CompareFolderTest/Test1'
-folder_path2 = 'D:/AlexandreMarchettiDossierPersonnel/__GITHUB_PROJECT__/Utils_FilesModifications/CompareFolderTest/Test2'
+folder_path1 = 'Your/Path/ToFolder1'
+folder_path2 = 'Your/Path/ToFolder2'
 
 # Appel de la fonction de comparaison
 results = compare_folders(folder_path1, folder_path2)

@@ -2,7 +2,7 @@ from os import listdir
 from os.path import isfile, join
 from os import walk
 
-filePath = f"D:\\AlexandreMarchettiDossierPersonnel\\__GITHUB_PROJECT__\\Utils_FilesModifications\\TestFolder"
+filePath = f"Your\\Path\\ToFolder"
 
 
 def GetFilesInsideFolder (_filePath) :
